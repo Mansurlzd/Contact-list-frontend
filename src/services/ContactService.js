@@ -4,13 +4,12 @@ const getAll = (params) => {
   return http.get("", { params });
 };
 
-const findByTitle = (title) => {
-  return http.get(`/tutorials?title=${title}`);
+const findByTitle = (name) => {
+  return http.get(`/?name=${name}`);
 };
 
 const ContactService = {
   getAll,
-
   findByTitle,
 };
 
